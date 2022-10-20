@@ -1,0 +1,320 @@
+html, body { 
+  scroll-behavior: smooth;
+  width: 100%;
+	height: 100%;
+	padding: 0;
+	margin: 0px;
+}
+
+/*Nav Bar CSS Start */
+
+#navbar {
+  overflow: hidden;
+  background-color: rgba(18, 18, 18, 0.9);
+  position: fixed;
+  width: 100%;
+  z-index: 5;
+}
+
+#logo {
+  height: 50px;
+  width: 50px;
+  position: absolute;
+  top: 15px;
+  left: 15px;
+}
+
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+li, a {
+	font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+	color: white;
+	text-decoration: none;
+
+}
+
+.nav_links {
+	list-style: none;
+  display: flex;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav_links > li {
+  display: inline-block;
+  padding: 0px 5px;
+}
+
+.nav_links li a {
+	transition: all 0.3s ease 0s;
+}
+
+.nav_links li a:hover {
+	color: darkgrey;
+	
+}
+
+li:not(:last-child) { 
+  border-right:solid 1px #fff;/* This will not give border to last li element */
+  padding-right: 35px;
+}
+
+.nav_links li + li:before {
+	content: '';
+  	padding-right: 25px;
+  	position: relative;
+  	top: -2px;
+}
+
+.sticky + .allcontent {
+  padding-top: 60px;
+}
+
+/* Nav Bar CSS End*/
+	
+/*--------------------------------------*/
+
+/* Parallax CSS Start*/
+
+#parallax {
+  background-image: url("../images/fishy.jpg");
+  min-height: 500px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#parallax2 {
+  background-image: url("../images/david-landscape.jpg");
+  height: 90%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#parallax2 img {
+  height: 300px;
+  width: 300px;
+  opacity: 80%;
+}
+
+.parallax3 {
+  background-image: url("../images/gc.jpg");
+  min-height: 500px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+h1 {
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+  color: black;
+  width: 100%;
+}
+h1.name {
+  font-family: Montserrat, sans-serif;
+  text-align: center;
+  color: black;
+  width: 100%;
+}
+h2 {
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+  color: black;
+  padding-left: 10%;
+  padding-right: 10%;
+  
+}
+h3 {
+  font-family: 'Roboto', sans-serif;
+  padding-left: 10%;
+  padding-right: 10%;
+  text-align: center;
+  color: black;
+ 
+}
+
+
+
+/* TEMP */
+h4 {
+  font-family: Montserrat, sans-serif;
+  color: black;
+  padding-left: 5px;
+
+}
+
+
+p {
+  font-family: Montserrat, sans-serif;
+  text-align: center;
+  color: black;
+  font-size: 20px;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+ul {
+  font-family: Montserrat, sans-serif;
+  text-align: left;
+  color: black;
+  font-size: 20px;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+#archive{
+  font-family: Montserrat, sans-serif;
+  min-height: 500px;
+  text-align: center;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-bottom: 10%;
+}
+body {
+  margin: 0;
+  background-color: #e0e0e0;
+}
+
+#calendar {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  float: center;
+  box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.2);
+  
+}
+.topnavigation {
+  overflow: hidden;
+}
+.topnavigation a {
+  font-family: "Lucida Console";
+  float: right;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+.topnavigation a:hover {
+  color: green;
+}
+
+.card {
+  box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  background-color:bisque;
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+}
+
+.cardTwo {
+  box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  background-color:bisque;
+  max-width: 12%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#allCards{
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 8%;
+}
+
+p.smalltitle {
+  color: grey;
+  font-size: 14px;
+}
+
+p.title, p.desc {
+  color: grey;
+  font-size: 18px;
+}
+
+blockPadding {
+  padding-left: 25%;
+}
+
+h1.name {
+  color: rgb(25, 48, 22);
+  font-size: 22px;
+}
+
+#info {
+  padding-bottom: 5%;
+}
+
+button {
+  border:1px;
+  outline: 0;
+  display: inline-block;
+  padding: 20px;
+  color: white;
+  background-color: rgb(5, 44, 7);
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+button:hover, a:hover {
+  opacity: 0.7;
+}
+
+/* Parallax CSS End*/
+
+/*--------------------------------------*/
+
+/* Archive Page CSS Start */
+
+#archiveBody {
+  background-color: bisque;
+}
+
+#archiveContainer {
+  padding-top: 5%;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 0.5fr);
+  grid-template-rows: 0.5fr;
+  grid-column-gap: 5px;
+  grid-row-gap: 0px;
+}
+
+/*
+.grid-item {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+*/
+
+.documentdisplay {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  
+}
